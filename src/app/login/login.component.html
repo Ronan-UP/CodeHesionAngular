@@ -1,1 +1,11 @@
-<p>login works!</p>
+
+<form #logform = "ngForm" (ngSubmit)="tryLogin(logform.value)">
+
+Email: <input ngModel type="email" #email name = "login" value=""> <br>
+Password:<input ngModel type="password" #password name="password"> <br>
+<input ngModel #clientid name="client_id"> <br>
+<input ngModel #clientSecret name="client_secret"> <br>
+<input ngModel #scope name="scope"> <br>
+
+<input type="submit">
+</form>
