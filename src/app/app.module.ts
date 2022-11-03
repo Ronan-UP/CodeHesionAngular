@@ -9,12 +9,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { UpdateInfoComponent } from './update-info/update-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpdateInfoComponent
   ],
   imports: [
     BrowserModule,
